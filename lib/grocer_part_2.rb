@@ -43,7 +43,16 @@ def checkout(cart, coupons)
 end
 
 cart = [
-  
+  {:item => "AVOCADO", :price => 3.00, :clearance => true, count: 5},
+  {:item => "KALE", :price => 3.00, :clearance => false, count: 2},
+  {:item => "BLACK_BEANS", :price => 2.50, :clearance => false, count: 1},
+  {:item => "ALMONDS", :price => 9.00, :clearance => false, count: 2},
+  {:item => "TEMPEH", :price => 3.00, :clearance => true, count: 3},
+  {:item => "CHEESE", :price => 6.50, :clearance => false, count: 2},
+  {:item => "BEER", :price => 13.00, :clearance => false, count: 6},
+  {:item => "PEANUTBUTTER", :price => 3.00, :clearance => true, count: 4},
+  {:item => "BEETS", :price => 2.50, :clearance => false, count: 4},
+  {:item => "SOY MILK", :price => 4.50, :clearance => true, count: 1}
   ]
 coupons = [
   
