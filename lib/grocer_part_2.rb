@@ -7,7 +7,7 @@ def apply_coupons(cart, coupons)
       binding.pry
       if cart_item[:item] == coupon_item[:item]
         # While enough items exist in the cart to use the coupon, do so
-        coupon_applied = cart_item
+        coupon_applied = cart_item.clone
         coupon_applied[:item] = "#{cart_item[:item]} W/COUPON"
         coupon_applied[:price] = coupon_item[:cost]/coupon_item[:num]
         coupon_applied[:count] = 0
