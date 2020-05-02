@@ -29,8 +29,7 @@ def apply_clearance(cart)
   cart.each do |item|
     if item[:clearance] == true
       new_price = item[:price] * 0.8
-      new_price.floor(2)
-      item[:price] = new_price
+      item[:price] = new_price.floor(2)
     end
   end
   return cart
