@@ -1,5 +1,5 @@
 require_relative './part_1_solution.rb'
-
+require 'pry'
 def apply_coupons(cart, coupons)
   # Go through each item in both the cart and the coupons list to check if there is a match
   cart.each do |cart_item|
