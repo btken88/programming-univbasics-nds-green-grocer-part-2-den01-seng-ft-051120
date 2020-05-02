@@ -4,15 +4,18 @@ def apply_coupons(cart, coupons)
   # Go through each item in both the cart and the coupons list to check if there is a match
   cart.each do |cart_item|
     coupons.each do |coupon_item|
+      binding.pry
       if cart_item[:item] == coupon_item[:item]
         # While enough items exist in the cart to use the coupon, do so
         coupon_applied = cart_item
         coupon_applied[:item] = "#{cart_item[:item]} W/COUPON"
         coupon_applied[:price] = coupon_item[:cost]/coupon_item[:num]
         coupon_applied[:count] = 0
+        binding.pry
         while cart_item[:count] >= coupon_item[:num] do
           coupon_applied[:count] += coupon_item[:num]
           cart_item[:count] -= coupon_item[:num]
+          binding.pry
         end
         cart << coupon_applied
       end
@@ -38,3 +41,11 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
 end
+
+cart = [
+  
+  ]
+coupons = [
+  
+  ]
+apply_coupons()
