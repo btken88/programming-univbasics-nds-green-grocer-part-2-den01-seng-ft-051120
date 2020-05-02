@@ -6,9 +6,9 @@ def apply_coupons(cart, coupons)
     coupons.each do |coupon_item|
       if cart_item[:item] == coupon_item[:item]
         # While enough items exist in the cart to use the coupon, do so
-        coupon_price = coupon_item[:cost]/coupon_item[:num]
         coupon_applied = cart_item
         coupon_applied[:item] = "#{cart_item[:item]} W/COUPON"
+        coupon_price = coupon_item[:cost]/coupon_item[:num]
         while cart_item[:count] <= coupon_item[:num] do
           
         end
