@@ -11,8 +11,8 @@ def apply_coupons(cart, coupons)
         coupon_applied[:price] = coupon_item[:cost]/coupon_item[:num]
         coupon_applied[:count] = 0
         while cart_item[:count] >= coupon_item[:num] do
-          cart_item[:count] -= coupon_item[:num]
           coupon_applied[:count] += coupon_item[:num]
+          cart_item[:count] -= coupon_item[:num]
         end
         cart << coupon_applied
       end
