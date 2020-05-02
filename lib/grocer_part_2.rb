@@ -48,15 +48,15 @@ cart = [
   {:item => "BLACK_BEANS", :price => 2.50, :clearance => false, count: 1},
   {:item => "ALMONDS", :price => 9.00, :clearance => false, count: 2},
   {:item => "TEMPEH", :price => 3.00, :clearance => true, count: 3},
-  {:item => "CHEESE", :price => 6.50, :clearance => false, count: 2},
+  {:item => "CHEESE", :price => 6.50, :clearance => false, count: 7},
   {:item => "BEER", :price => 13.00, :clearance => false, count: 6},
   {:item => "PEANUTBUTTER", :price => 3.00, :clearance => true, count: 4},
   {:item => "BEETS", :price => 2.50, :clearance => false, count: 4},
   {:item => "SOY MILK", :price => 4.50, :clearance => true, count: 1}
   ]
 coupons = [
-      {:item => "AVOCADO", :num => 2, :cost => 5.00},
-      {:item => "BEER", :num => 2, :cost => 20.00},
-      {:item => "CHEESE", :num => 3, :cost => 15.00}
+  {:item => "AVOCADO", :num => 2, :cost => 5.00},
+  {:item => "BEER", :num => 2, :cost => 20.00},
+  {:item => "CHEESE", :num => 3, :cost => 15.00}
   ]
 apply_coupons()
